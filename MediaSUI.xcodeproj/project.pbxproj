@@ -11,6 +11,12 @@
 		3DB7D0152DF4CAE3004131BD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB7D0142DF4CAE3004131BD /* ContentView.swift */; };
 		3DB7D0172DF4CAE6004131BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DB7D0162DF4CAE6004131BD /* Assets.xcassets */; };
 		3DB7D01A2DF4CAE6004131BD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DB7D0192DF4CAE6004131BD /* Preview Assets.xcassets */; };
+		3DB7D0212DF4CBA6004131BD /* MediaPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB7D0202DF4CBA6004131BD /* MediaPlayer.swift */; };
+		3DB7D0242DF4CBB7004131BD /* luvia-tiktok.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 3DB7D0222DF4CBB7004131BD /* luvia-tiktok.mp4 */; };
+		3DB7D0252DF4CBB7004131BD /* 1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3DB7D0232DF4CBB7004131BD /* 1.mp3 */; };
+		3DB7D0272DF52A1F004131BD /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB7D0262DF52A1F004131BD /* VideoView.swift */; };
+		3DB7D0292DF53807004131BD /* YTView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB7D0282DF53807004131BD /* YTView.swift */; };
+		3DB7D02D2DF54DFC004131BD /* YouTubeiOSPlayerHelper in Frameworks */ = {isa = PBXBuildFile; productRef = 3DB7D02C2DF54DFC004131BD /* YouTubeiOSPlayerHelper */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,11 @@
 		3DB7D0142DF4CAE3004131BD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3DB7D0162DF4CAE6004131BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3DB7D0192DF4CAE6004131BD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3DB7D0202DF4CBA6004131BD /* MediaPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaPlayer.swift; sourceTree = "<group>"; };
+		3DB7D0222DF4CBB7004131BD /* luvia-tiktok.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "luvia-tiktok.mp4"; sourceTree = "<group>"; };
+		3DB7D0232DF4CBB7004131BD /* 1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 1.mp3; sourceTree = "<group>"; };
+		3DB7D0262DF52A1F004131BD /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
+		3DB7D0282DF53807004131BD /* YTView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YTView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DB7D02D2DF54DFC004131BD /* YouTubeiOSPlayerHelper in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,10 +63,15 @@
 		3DB7D0112DF4CAE3004131BD /* MediaSUI */ = {
 			isa = PBXGroup;
 			children = (
+				3DB7D0232DF4CBB7004131BD /* 1.mp3 */,
+				3DB7D0222DF4CBB7004131BD /* luvia-tiktok.mp4 */,
 				3DB7D0122DF4CAE3004131BD /* MediaSUIApp.swift */,
 				3DB7D0142DF4CAE3004131BD /* ContentView.swift */,
+				3DB7D0202DF4CBA6004131BD /* MediaPlayer.swift */,
 				3DB7D0162DF4CAE6004131BD /* Assets.xcassets */,
 				3DB7D0182DF4CAE6004131BD /* Preview Content */,
+				3DB7D0262DF52A1F004131BD /* VideoView.swift */,
+				3DB7D0282DF53807004131BD /* YTView.swift */,
 			);
 			path = MediaSUI;
 			sourceTree = "<group>";
@@ -83,6 +100,9 @@
 			dependencies = (
 			);
 			name = MediaSUI;
+			packageProductDependencies = (
+				3DB7D02C2DF54DFC004131BD /* YouTubeiOSPlayerHelper */,
+			);
 			productName = MediaSUI;
 			productReference = 3DB7D00F2DF4CAE3004131BD /* MediaSUI.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +131,9 @@
 				Base,
 			);
 			mainGroup = 3DB7D0062DF4CAE3004131BD;
+			packageReferences = (
+				3DB7D02B2DF54DFB004131BD /* XCRemoteSwiftPackageReference "youtube-ios-player-helper" */,
+			);
 			productRefGroup = 3DB7D0102DF4CAE3004131BD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,6 +148,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DB7D0252DF4CBB7004131BD /* 1.mp3 in Resources */,
+				3DB7D0242DF4CBB7004131BD /* luvia-tiktok.mp4 in Resources */,
 				3DB7D01A2DF4CAE6004131BD /* Preview Assets.xcassets in Resources */,
 				3DB7D0172DF4CAE6004131BD /* Assets.xcassets in Resources */,
 			);
@@ -137,8 +162,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DB7D0272DF52A1F004131BD /* VideoView.swift in Sources */,
 				3DB7D0152DF4CAE3004131BD /* ContentView.swift in Sources */,
 				3DB7D0132DF4CAE3004131BD /* MediaSUIApp.swift in Sources */,
+				3DB7D0212DF4CBA6004131BD /* MediaPlayer.swift in Sources */,
+				3DB7D0292DF53807004131BD /* YTView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +372,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3DB7D02B2DF54DFB004131BD /* XCRemoteSwiftPackageReference "youtube-ios-player-helper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/youtube/youtube-ios-player-helper.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3DB7D02C2DF54DFC004131BD /* YouTubeiOSPlayerHelper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3DB7D02B2DF54DFB004131BD /* XCRemoteSwiftPackageReference "youtube-ios-player-helper" */;
+			productName = YouTubeiOSPlayerHelper;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3DB7D0072DF4CAE3004131BD /* Project object */;
 }
